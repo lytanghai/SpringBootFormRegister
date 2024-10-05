@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN ./mvnw clean install
+CMD ["mvn", "clean", "install"]
 
 COPY target/backend.jar app.jar
 
