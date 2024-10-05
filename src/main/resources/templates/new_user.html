@@ -10,12 +10,12 @@
 </head>
 <body>
 	<div class="container">
-		<h1>User Management System</h1>
+		<h1>Customer Form Insert</h1>
 		<hr>
-		<h2>Save New User</h2>
+		<h2>Save New Customer</h2>
 		<br><br>
 		<form action="#"th:action="@{/saveUser}" th:object="${User}" method="POST" class="text-align:center">
-			<input type="text" th:field="*{id}" placeholder="No." class="form-control mb-4 col-4">
+			<input type="text" th:field="*{id}" placeholder="ID" class="form-control mb-4 col-4">
 			<input type="text" th:field="*{firstName}" placeholder="First Name" class="form-control mb-4 col-4">
 			<input type="text" th:field="*{lastName}" placeholder="Last Name" class="form-control mb-4 col-4">
 			<input type="text" th:field="*{dob}" placeholder="Date of Birth" class="form-control mb-4 col-4">

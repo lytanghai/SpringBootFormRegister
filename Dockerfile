@@ -2,8 +2,8 @@ FROM openjdk:8-jdk-alpine
 
 WORKDIR /app
 
-COPY /target/SpringBootFormRegister.jar app.jar
+COPY /target/backend.jar app.jar
 
-EXPOSE 8080
+EXPOSE 9091
 
 CMD ["java", "-jar", "app.jar"]
