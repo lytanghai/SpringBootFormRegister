@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the Maven project files and build the project
 COPY . /app
-RUN ./mvnw clean package -DskipTests
+RUN ./mvnw clean install -DskipTests
 
 # Copy the compiled JAR file to the app directory
 COPY target/backend.jar app.jar
